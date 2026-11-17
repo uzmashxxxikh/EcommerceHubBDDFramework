@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 12 02:14:45 EST 2026</td>
+<td>Started on:</td><td>Tue Nov 17 14:15:12 EST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>70 seconds (70437 ms)</td>
+<tr><td>Total time:</td><td>91 seconds (91500 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,43 +67,63 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to wishlist", "Add Product to Wish List"</td>
-<td></td>
-<td>7</td>
-<td>runners.TestRunner@4218d6a3</td></tr>
-<tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User launches application successfully", "Launch Application"</td>
-<td></td>
-<td>3</td>
-<td>runners.TestRunner@4218d6a3</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to shopping cart", "Add Product to Cart"</td>
-<td></td>
-<td>11</td>
-<td>runners.TestRunner@4218d6a3</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register as an affiliate", "Affiliate Registration"</td>
-<td></td>
-<td>7</td>
-<td>runners.TestRunner@4218d6a3</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login"</td>
-<td></td>
-<td>5</td>
-<td>runners.TestRunner@4218d6a3</td></tr>
+<td><div><pre>java.lang.AssertionError: Expected title to contain [Your Store] but was [Samsung Galaxy Tab 10.1] expected [true] but found [false]
+	at stepDefinitions.CommonSteps.page_title_should_contain(CommonSteps.java:27)
+	at ✽.page title should contain &quot;Your Store&quot;(file:///C:/Users/uzmas/eclipse-workspace/EcommerceHubBDDFramework/src/test/resources/features/TC01_LaunchApplication.feature:7)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace637627568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637627568'><pre>java.lang.AssertionError: Expected title to contain [Your Store] but was [Samsung Galaxy Tab 10.1] expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.CommonSteps.page_title_should_contain(CommonSteps.java:27)
+	at ✽.page title should contain &quot;Your Store&quot;(file:///C:/Users/uzmas/eclipse-workspace/EcommerceHubBDDFramework/src/test/resources/features/TC01_LaunchApplication.feature:7)
+</pre></div></td>
+<td>8</td>
+<td>runners.TestRunner@38e79ae3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete purchase successfully", "Complete Purchase"</td>
 <td></td>
-<td>32</td>
-<td>runners.TestRunner@4218d6a3</td></tr>
+<td>33</td>
+<td>runners.TestRunner@38e79ae3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to shopping cart", "Add Product to Cart"</td>
+<td></td>
+<td>12</td>
+<td>runners.TestRunner@38e79ae3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to wishlist", "Add Product to Wish List"</td>
+<td></td>
+<td>11</td>
+<td>runners.TestRunner@38e79ae3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login"</td>
+<td></td>
+<td>6</td>
+<td>runners.TestRunner@38e79ae3</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register as an affiliate", "Affiliate Registration"</td>
+<td></td>
+<td>17</td>
+<td>runners.TestRunner@38e79ae3</td></tr>
 </table><p>
 </body>
 </html>
